@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>AnalystPortfolio - Data Analyst Professional Portfolio</title>
+  <meta name="description" content="Portfolio of Hanif Ibnu Oktafian, professional Data Analyst. Transforming raw data into strategic business narratives through predictive modeling, interactive visualizations, and mathematical optimization." />
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Load Custom Fonts: Hanken Grotesk, Inter, JetBrains Mono & Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+  
+  <!-- Main Styling Link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="top-nav" id="main-navigation">
+    <div class="container nav-container">
+      <div class="logo" id="nav-brand-logo">
+        AnalystPortfolio
+      </div>
+      <div class="nav-links" id="desktop-menu-links">
+        <a href="#hero" id="nav-link-hero" class="active" data-i18n="nav_hero">HOME</a>
+        <a href="#about" id="nav-link-about" data-i18n="nav_about">About</a>
+        <a href="#skills" id="nav-link-skills" data-i18n="nav_skills">Skills</a>
+        <a href="#works" id="nav-link-works" data-i18n="nav_works">Works</a>
+        <a href="#contact" id="nav-link-contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-actions" id="nav-action-buttons">
+        <button id="lang-btn" class="btn-lang" title="Ganti Bahasa / 言語切替">
+          <span id="lang-btn-text">ID</span>
+        </button>
+        <button id="theme-toggle" class="btn-theme" title="Ganti Tema Visual">
+          <span id="theme-icon" class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="container main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-text">
+        <div class="hero-badge-wrap">
+          <div class="hero-badge" id="hero-freelance-badge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero_badge">Tersedia untuk Freelance & Proyek Data</span>
+          </div>
+        </div>
+        <h1 class="hero-title" id="hero-main-title" data-i18n="hero_title">
+          Mengubah Data Mentah Menjadi <span class="highlight">Narasi Strategis</span>.
+        </h1>
+        <p class="hero-description" id="hero-main-description" data-i18n="hero_desc">
+          Saya membantu bisnis menemukan peluang tersembunyi melalui analisis prediktif, visualisasi interaktif, dan optimasi berbasis data dengan presisi matematis.
+        </p>
+        <div class="hero-actions" id="hero-action-links">
+          <a href="#works" id="hero-btn-works-link" class="btn btn-primary">
+            <span data-i18n="hero_btn_works">Lihat Proyek Saya</span>
+            <span class="material-symbols-outlined btn-icon-label">arrow_forward</span>
+          </a>
+          <a href="#contact" id="hero-btn-contact-link" class="btn btn-secondary" data-i18n="hero_btn_contact">
+            Hubungi Sekarang
+          </a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-img-container" id="hero-profile-container">
+          <img alt="Profile Hanif Ibnu Oktafian" class="hero-img" id="hero-profile-image" src="assets/profile.jpg"/>
+          <div class="hero-overlay"></div>
+        </div>
+        <!-- Floating Stats Card (Desktop Only) -->
+        <div class="stats-card" id="hero-floating-stats">
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-num" id="stat-accuracy-val">99.9%</div>
+              <div class="stat-label" data-i18n="hero_stat_accuracy">Akurasi Data</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num" id="stat-models-val">50+</div>
+              <div class="stat-label" data-i18n="hero_stat_completed">Model Selesai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section grid grid-cols-1 grid-cols-md-12">
+      <div class="col-span-md-4">
+        <h2 class="about-sticky-heading" id="about-heading-text" data-i18n="about_heading">
+          Filosofi <br/>Data Saya.
+        </h2>
+      </div>
+      <div class="col-span-md-8 about-body">
+        <div class="about-desc">
+          <p data-i18n="about_p1">
+            Bagi saya, data bukan sekadar angka dalam tabel; itu adalah jejak digital dari perilaku manusia dan proses bisnis. Sebagai seorang Data Analyst, misi saya adalah menjadi penerjemah antara teknisitas data dan kebutuhan bisnis yang nyata.
+          </p>
+          <p data-i18n="about_p2">
+            Dengan latar belakang pendidikan di <span class="highlight">Institut Teknologi PLN</span>, saya mengasah kemampuan untuk berpikir secara sistematis dan analitis. Saya percaya bahwa integritas data adalah kunci dari setiap keputusan yang baik.
+          </p>
+        </div>
+        <!-- Operational Pillars -->
+        <div class="grid grid-cols-1 grid-cols-sm-3" id="about-pillars-grid">
+          <div class="pillar-card" id="about-pillar-precise">
+            <h4 class="pillar-title" data-i18n="about_precise_title">Precise</h4>
+            <p class="pillar-text" data-i18n="about_precise_desc">Akurasi adalah fondasi dari setiap laporan.</p>
+          </div>
+          <div class="pillar-card" id="about-pillar-transparent">
+            <h4 class="pillar-title" data-i18n="about_transparent_title">Transparent</h4>
+            <p class="pillar-text" data-i18n="about_transparent_desc">Metodologi yang jelas dan dapat diaudit.</p>
+          </div>
+          <div class="pillar-card" id="about-pillar-actionable">
+            <h4 class="pillar-title" data-i18n="about_actionable_title">Actionable</h4>
+            <p class="pillar-text" data-i18n="about_actionable_desc">Wawasan yang mendorong hasil nyata.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-header-center">
+        <h2 id="skills-main-heading" data-i18n="skills_title">Technical Toolkit</h2>
+        <p id="skills-sub-heading" data-i18n="skills_desc">Kombinasi alat modern untuk pemrosesan, visualisasi, dan pemodelan data tingkat lanjut.</p>
+      </div>
+      <div class="grid grid-cols-2 grid-cols-md-5" id="skills-grid-container">
+        <!-- Python -->
+        <div class="skill-card" id="skill-card-python">
+          <div class="skill-icon-box">
+            <span class="material-symbols-outlined text-3xl">terminal</span>
+          </div>
+          <span class="skill-title">Python</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        <!-- SQL -->
+        <div class="skill-card" id="skill-card-sql">
+          <div class="skill-icon-box">
+            <span class="material-symbols-outlined text-3xl">database</span>
+          </div>
+          <span class="skill-title">SQL</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+        <!-- Tableau -->
+        <div class="skill-card" id="skill-card-tableau">
+          <div class="skill-icon-box">
+            <span class="material-symbols-outlined text-3xl">bar_chart</span>
+          </div>
+          <span class="skill-title">Tableau</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <!-- PowerBI -->
+        <div class="skill-card" id="skill-card-powerbi">
+          <div class="skill-icon-box">
+            <span class="material-symbols-outlined text-3xl">dashboard</span>
+          </div>
+          <span class="skill-title">PowerBI</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+        <!-- ML -->
+        <div class="skill-card" id="skill-card-ml">
+          <div class="skill-icon-box">
+            <span class="material-symbols-outlined text-3xl">psychology</span>
+          </div>
+          <span class="skill-title">ML</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works-section">
+      <div class="works-header">
+        <div class="works-header-text">
+          <h2 id="works-main-heading" data-i18n="works_title">Portofolio Proyek</h2>
+          <p id="works-sub-heading" data-i18n="works_desc">Eksplorasi tantangan nyata melalui analisis data mendalam.</p>
+        </div>
+        <div class="filter-tabs" id="works-filter-controls">
+          <button class="filter-tab active" data-filter="all" id="filter-btn-all" data-i18n="filter_all">Semua</button>
+          <button class="filter-tab" data-filter="visualization" id="filter-btn-vis" data-i18n="filter_vis">Visualisasi</button>
+          <button class="filter-tab" data-filter="ml" id="filter-btn-ml" data-i18n="filter_ml">Machine Learning</button>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3" id="projects-grid-container">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="ml" id="project-card-1">
+          <div class="project-media-container">
+            <div class="project-img-overlay"></div>
+            <img alt="Visualisasi Dashboad Analisis Churn Pelanggan E-Commerce" class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyPO4VCOOEUm0UjZzhDmfR2phaCb6G6O0RWbiCJb8_7KOlx9EDlTpfMxMz7kDRQQPlFy_arA1C6aQpAC762Fj0vn8Jvu_EGUtuX12lKsFBjuXyTykvCDq6PYiWMHBwPqh2NWaG9ycja5JlrH8lo1eZJhoIbJtk5F92nRj0P-ZsavtgAEBssgprYussy7fGNt3-A6Ro-CtynA1yl9RnGRIgzJYjSMiYaN_v4TsjCP38IICsmvvtCgVmc-wThFEkTEPcQp79fIjRviIW"/>
+            <div class="project-badge-pos">
+              <span class="pill pill-tertiary" data-i18n="project_1_cat">E-Commerce</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" id="project-1-title" data-i18n="project_1_title">Prediksi Churn Pelanggan</h3>
+            <p class="project-desc" id="project-1-desc" data-i18n="project_1_desc">
+              Menganalisis pola perilaku pelanggan untuk memprediksi kemungkinan berhenti berlangganan dengan akurasi 89% menggunakan algoritma Random Forest.
+            </p>
+            <div class="project-techs" id="project-1-tech-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Scikit-Learn</span>
+              <span class="chip">SQL</span>
+            </div>
+            <div class="project-footer">
+              <div class="rating-stars" id="project-1-rating" aria-label="Rating: 5 bintang">
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+              </div>
+              <a class="project-link" href="#" id="project-1-detail-link">
+                <span data-i18n="project_detail">Detail</span>
+                <span class="material-symbols-outlined">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="visualization" id="project-card-2">
+          <div class="project-media-container">
+            <div class="project-img-overlay"></div>
+            <img alt="Peta Interaktif Analisis Arus Kas Real-time Regional" class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFrIDY3pJsFIx5cSIF58-IxGTm0gnV20i3zU_Tiy58X6MUZ6JZc97mcR9md8T2mpH2MWiCr0-J7yRmo7RDimTdscFIurlIAR3uAwnhNPlrFOE5iUXgRtMOypmr0-YZt3_PPc2wyjN5gRg6ydirbP6zyDGEGqD6iGsh2gZCIv74mDU0lsG_G-aaEXlAcYNVlZyzXuMOu42YQE1lBJftkGt2YOZ1mWbdXtGJkzj7uFwaIYSNh2wEIzlcKNuUqnuwHbxBoy-WqtMaq3AM"/>
+            <div class="project-badge-pos">
+              <span class="pill pill-tertiary" data-i18n="project_2_cat">Finance</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" id="project-2-title" data-i18n="project_2_title">Analisis Arus Kas Real-time</h3>
+            <div class="project-sub-tag" id="project-2-subtag" data-i18n="project_2_sub">
+              Optimasi dashboard Tableau untuk tim eksekutif.
+            </div>
+            <p class="project-desc" id="project-2-desc" data-i18n="project_2_desc">
+              Dashboard interaktif yang menyajikan performa finansial harian di seluruh cabang regional secara otomatis.
+            </p>
+            <div class="project-techs" id="project-2-tech-chips">
+              <span class="chip">Tableau</span>
+              <span class="chip">AWS S3</span>
+            </div>
+            <div class="project-footer">
+              <div class="rating-stars" id="project-2-rating" aria-label="Rating: 4 bintang">
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <a class="project-link" href="#" id="project-2-detail-link">
+                <span data-i18n="project_detail">Detail</span>
+                <span class="material-symbols-outlined">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="ml" id="project-card-3">
+          <div class="project-media-container">
+            <div class="project-img-overlay"></div>
+            <img alt="Visualisasi Grafik Jaringan Optimasi Distribusi Grid Energi" class="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnAi24FJsP-l8onwHENR62sicQ1sFdNOIVO8veWzN9kpfA2C41-vSK3zAt9na0IstaY7FeCPK9ZiqtIAQKbTX4VPrI3Sz7A23SBjA_az52_xJQD_83a-ilR3-ZIEG8GEW-RI9e8GNn8NtDsTUaIS5wNvwSMf10Io_UBPYs7Cf-yiOnm9VnTbQ2C7rYNU_s2jwTnN8xDiRpmpZFvuwwtVOsBMz4m6NaTEQkJjloyPGZxPMyc_ZApvxMVkJyTVSz6EwnOLZ23EIr5jkh"/>
+            <div class="project-badge-pos">
+              <span class="pill pill-tertiary" data-i18n="project_3_cat">Energy</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" id="project-3-title" data-i18n="project_3_title">Optimasi Distribusi Beban</h3>
+            <p class="project-desc" id="project-3-desc" data-i18n="project_3_desc">
+              Model optimasi menggunakan Linear Programming untuk mengurangi pemborosan energi sebesar 12% pada sistem distribusi grid.
+            </p>
+            <div class="project-techs" id="project-3-tech-chips">
+              <span class="chip">Optimization</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Pandas</span>
+            </div>
+            <div class="project-footer">
+              <div class="rating-stars" id="project-3-rating" aria-label="Rating: 5 bintang">
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+                <span class="material-symbols-outlined filled">star</span>
+              </div>
+              <a class="project-link" href="#" id="project-3-detail-link">
+                <span data-i18n="project_detail">Detail</span>
+                <span class="material-symbols-outlined">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-container">
+      <div class="contact-layout">
+        <!-- Contact Information Details -->
+        <div class="contact-info">
+          <h2 id="contact-main-heading" data-i18n="contact_title">Mulai Diskusi Data Anda.</h2>
+          <p id="contact-sub-heading" data-i18n="contact_desc">
+            Siap membantu Anda menggali nilai dari data. Kirimkan pesan atau hubungi melalui platform media sosial saya.
+          </p>
+          <div class="contact-details" id="contact-list-info">
+            <div class="contact-detail-item" id="contact-item-email">
+              <div class="contact-icon-box">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <div class="contact-detail-label" data-i18n="contact_label_email">Email</div>
+                <div class="contact-detail-value" id="contact-email-value">
+                  <a href="mailto:hanifibnuoktafian@gmail.com">hanifibnuoktafian@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-detail-item" id="contact-item-location">
+              <div class="contact-icon-box">
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <div>
+                <div class="contact-detail-label" data-i18n="contact_label_location">Lokasi</div>
+                <div class="contact-detail-value" id="contact-location-value" data-i18n="contact_location_val">
+                  Jakarta, Indonesia
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Social Link Icons -->
+          <div class="social-links" id="contact-social-icons">
+            <a class="social-link" href="#" id="social-link-linkedin" aria-label="LinkedIn">In</a>
+            <a class="social-link" href="#" id="social-link-github" aria-label="GitHub">GH</a>
+            <a class="social-link" href="#" id="social-link-twitter" aria-label="Twitter">Tw</a>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form" action="#">
+          <div class="form-group" id="form-group-name">
+            <label class="form-label" for="form-name-input" data-i18n="form_name">Nama Lengkap</label>
+            <input class="form-input" id="form-name-input" type="text" data-i18n-placeholder="placeholder_name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group" id="form-group-email">
+            <label class="form-label" for="form-email-input" data-i18n="form_email">Alamat Email</label>
+            <input class="form-input" id="form-email-input" type="email" data-i18n-placeholder="placeholder_email" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group" id="form-group-message">
+            <label class="form-label" for="form-message-input" data-i18n="form_message">Pesan Anda</label>
+            <textarea class="form-input form-textarea" id="form-message-input" rows="4" data-i18n-placeholder="placeholder_message" placeholder="Bagaimana saya bisa membantu proyek Anda?" required></textarea>
+          </div>
+          <button class="btn btn-primary" id="form-submit-button" type="submit" style="width: 100%;">
+            <span data-i18n="form_btn_send">Kirim Pesan</span>
+            <span class="material-symbols-outlined btn-icon-label">send</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer-layout">
+      <div class="footer-logo" id="footer-logo-text">
+        AnalystPortfolio
+      </div>
+      <div class="footer-copyright" id="footer-copy-text" data-i18n="footer_text">
+        © 2026 Data Analyst Portfolio. Precision in every byte.
+      </div>
+      <div class="footer-links" id="footer-link-items">
+        <a class="footer-link" href="#" id="footer-link-linkedin">LinkedIn</a>
+        <a class="footer-link" href="#" id="footer-link-github">GitHub</a>
+        <a class="footer-link" href="#" id="footer-link-tableau">Tableau</a>
+        <a class="footer-link" href="mailto:hanifibnuoktafian@gmail.com" id="footer-link-email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button (WhatsApp) -->
+  <div class="fab-container" id="whatsapp-fab-container">
+    <a class="fab-btn" id="wa-fab-link" href="https://wa.me/6288706656747" target="_blank" aria-label="Hubungi via WhatsApp">
+      <span class="material-symbols-outlined fab-icon">chat</span>
+      <div class="fab-tooltip" id="wa-fab-tooltip" data-i18n="fab_tooltip">Hubungi via WhatsApp</div>
+    </a>
+  </div>
+
+  <!-- Load Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
